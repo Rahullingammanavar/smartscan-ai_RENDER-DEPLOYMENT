@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Classification - AI Diagnosis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-microscope me-2"></i>
+                Skin Disease AI
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold text-primary">
+                        <i class="fas fa-user-md me-3"></i>
+                        AI Skin Disease Classification
+                    </h1>
+                    <p class="lead text-muted">
+                        Upload an image of a skin lesion and get instant AI-powered analysis
+                    </p>
+                </div>
+
+                <!-- Upload Form -->
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-5">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <div class="text-center mb-4">
+                                <h3 class="card-title text-primary">
+                                    <i class="fas fa-cloud-upload-alt me-2"></i>
+                                    Upload Skin Image
+                                </h3>
+                            </div>
+
+                            <!-- File Upload Area -->
+                            <div class="upload-area text-center p-5 border border-2 border-dashed rounded">
+                                <i class="fas fa-image fa-3x text-muted mb-3"></i>
+                                <h5 class="text-muted">Drag & Drop your image here</h5>
+                                <p class="text-muted">or</p>
+                                <input type="file" name="file" accept="image/*" class="form-control" required>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-search me-2"></i>
+                                    Analyze Image
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <div class="card mt-4 border-0 bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Instructions
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Upload clear, well-lit images of skin lesions</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Supported formats: PNG, JPG, JPEG, GIF, BMP</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Maximum file size: 16MB</li>
+                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>This tool is for educational purposes only</li>
+                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Always consult a healthcare professional for medical advice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Skin Disease AI Classification. Educational purposes only.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

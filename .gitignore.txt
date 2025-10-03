@@ -1,0 +1,31 @@
+# --- Virtual Environments ---
+# Ignores all virtual environment folders, like .venv_ml_working
+.venv*
+venv/
+env/
+
+# --- Python Cache Files ---
+# Ignores files Python generates automatically
+__pycache__/
+*.pyc
+
+# --- Data, Checkpoints, and Models ---
+# Ignores your raw data folder
+data_split/
+
+# Ignores folders containing saved models from training
+checkpoints/
+checkpoints_improved/
+
+# IMPORTANT: Safety net to ignore large model files ANYWHERE in the project
+# Replace with your actual model file extension if different
+*.h5
+*.pkl
+*.pt
+*.keras
+model.savedmodel/
+
+# --- IDE/Editor Configuration ---
+# Ignores settings folders from common editors like VS Code or PyCharm
+.vscode/
+.idea/
